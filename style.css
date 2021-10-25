@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+#container {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    width: 100%;
+    color: white;
+    font-size: 65px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.square {
+    width: calc(80vw / 7 - 10px);
+    margin: 5px;
+    height: calc(80vw / 7 - 10px);
+    background-color: blue;
+}
+
+.square_std {
+}
+
+.square_3 {
+    background-color: greenyellow;
+}
+
+.square_5 {
+    background-color: yellow;
+}
+
+.square_15 {
+    background-color: red;
+}
