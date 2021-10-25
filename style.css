@@ -25,9 +25,12 @@ h1 {
 
 .square {
     width: calc(80vw / 7 - 10px);
-    margin: 5px;
     height: calc(80vw / 7 - 10px);
+    margin: 5px;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .square_std {
