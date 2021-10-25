@@ -1,18 +1,21 @@
 const squareContainer = document.getElementById("container");
 
 for (let i = 1; i <= 100; i++) {
-    const squareBox = `<div class="square">${i}</div>`;
-    const squareBox3 = `<div class="square square_3">Fizz</div>`;
-    const squareBox5 = `<div class="square square_5">Buzz</div>`;
-    const squareBox15 = `<div class="square square_15">FizzBuzz</div>`;
+    const square = document.createElement('div');
+    square.className = 'square';
 
     if (i % 3 !== 0 && i % 5 !== 0) {
-        squareContainer.innerHTML += squareBox;
+        square.append(i);
     } else if (i % 3 == 0 && i % 5 !== 0) {
-        squareContainer.innerHTML += squareBox3;
+        square.append('fizz');
+        square.classList.add('square_3');
     } else if (i % 5 == 0 && i % 3 !== 0) {
-        squareContainer.innerHTML += squareBox5;
+        square.append('buzz');
+        square.classList.add('square_5');
     } else if (i % 3 == 0 && i % 5 == 0) {
-        squareContainer.innerHTML += squareBox15;
+        square.append('fizzbuzz');
+        square.classList.add('square_15');
     }
+
+    squareContainer.appendChild(square);
 }
